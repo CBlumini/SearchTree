@@ -1,3 +1,4 @@
+package TreeNode;
 /**
  * Node class used for implementing the BST.
  *
@@ -17,7 +18,7 @@ public class TreeNode<T extends Comparable<? super T>> {
      *
      * @param data the data stored in the new node
      */
-    TreeNode(T data) {
+    public TreeNode(T data) {
         this.data = data;
     }
 
@@ -26,7 +27,7 @@ public class TreeNode<T extends Comparable<? super T>> {
      *
      * @return the data
      */
-    T getData() {
+    public T getData() {
         return data;
     }
 
@@ -35,7 +36,7 @@ public class TreeNode<T extends Comparable<? super T>> {
      *
      * @return the left child
      */
-    TreeNode<T> getLeft() {
+    public TreeNode<T> getLeft() {
         return left;
     }
 
@@ -44,7 +45,7 @@ public class TreeNode<T extends Comparable<? super T>> {
      *
      * @return the right child
      */
-    TreeNode<T> getRight() {
+    public TreeNode<T> getRight() {
         return right;
     }
 
@@ -53,7 +54,7 @@ public class TreeNode<T extends Comparable<? super T>> {
      *
      * @param data the new data
      */
-    void setData(T data) {
+    public void setData(T data) {
         this.data = data;
     }
 
@@ -62,7 +63,7 @@ public class TreeNode<T extends Comparable<? super T>> {
      *
      * @param left the new left child
      */
-    void setLeft(TreeNode<T> left) {
+    public void setLeft(TreeNode<T> left) {
         this.left = left;
     }
 
@@ -71,7 +72,7 @@ public class TreeNode<T extends Comparable<? super T>> {
      *
      * @param right the new right child
      */
-    void setRight(TreeNode<T> right) {
+    public void setRight(TreeNode<T> right) {
         this.right = right;
     }
 }
